@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.6.5 on win32)" generated="20220413 14:23:32.235" rpa="false" schemaversion="2">
+<suite id="s1" name="projeTest" source="C:\develop\Proje\proje\test\projeTest.robot">
+<test id="s1-t1" name="verify check the result">
+<kw name="check the result" library="projeApp">
+<kw name="create session" library="proje">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220413 14:23:33.045" level="INFO">Opening browser 'chrome' to base url 'https://www.kariyer.net/'.</msg>
+<status status="PASS" starttime="20220413 14:23:33.044" endtime="20220413 14:23:36.014"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220413 14:23:36.015" endtime="20220413 14:23:36.152"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="Header"]/div[2]/div[1]/a/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220413 14:23:36.153" endtime="20220413 14:23:36.193"/>
+</kw>
+<status status="PASS" starttime="20220413 14:23:33.044" endtime="20220413 14:23:36.193"/>
+</kw>
+<kw name="click find job button" library="proje">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=btnFindWork</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220413 14:23:36.196" level="INFO">Clicking element 'id=btnFindWork'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220413 14:23:37.568" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220413 14:23:37.303" endtime="20220413 14:23:37.568"/>
+</kw>
+<msg timestamp="20220413 14:23:37.592" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a id="btnFindWork" href="javascript:;" onclick="searchJob('https://www.kariyer.net/is-ilanlari'); dataLayer.push({ 'Category': 'Search', 'Action': 'Is Bul', 'Label': 'Click', 'event': 'gaEvent' }); dataLayer.push({ 'pageView': '/vp/funnel/arama', 'event': 'virtualPageView' });"&gt;...&lt;/a&gt; is not clickable at point (1090, 253). Other element would receive the click: &lt;div class="ui-widget-overlay ui-front" style="z-index: 19999;"&gt;&lt;/div&gt;
+  (Session info: chrome=100.0.4896.88)
+</msg>
+<status status="FAIL" starttime="20220413 14:23:36.195" endtime="20220413 14:23:37.592"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="__layout"]/div/div[2]/div/div[1]/div[2]/div[1]/div/div/div/h1</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220413 14:23:37.592" endtime="20220413 14:23:37.592"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220413 14:23:37.592" endtime="20220413 14:23:37.592"/>
+</kw>
+<status status="FAIL" starttime="20220413 14:23:36.194" endtime="20220413 14:23:37.592"/>
+</kw>
+<kw name="click the city button" library="proje">
+<status status="NOT RUN" starttime="20220413 14:23:37.593" endtime="20220413 14:23:37.593"/>
+</kw>
+<kw name="click the tarih button" library="proje">
+<status status="NOT RUN" starttime="20220413 14:23:37.593" endtime="20220413 14:23:37.593"/>
+</kw>
+<kw name="click the uygula button" library="proje">
+<status status="NOT RUN" starttime="20220413 14:23:37.593" endtime="20220413 14:23:37.593"/>
+</kw>
+<kw name="check the filter is ilanlar page" library="proje">
+<status status="NOT RUN" starttime="20220413 14:23:37.593" endtime="20220413 14:23:37.593"/>
+</kw>
+<kw name="close session" library="proje">
+<status status="NOT RUN" starttime="20220413 14:23:37.593" endtime="20220413 14:23:37.593"/>
+</kw>
+<status status="FAIL" starttime="20220413 14:23:33.043" endtime="20220413 14:23:37.594"/>
+</kw>
+<status status="FAIL" starttime="20220413 14:23:33.041" endtime="20220413 14:23:37.595">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a id="btnFindWork" href="javascript:;" onclick="searchJob('https://www.kariyer.net/is-ilanlari'); dataLayer.push({ 'Category': 'Search', 'Action': 'Is Bul', 'Label': 'Click', 'event': 'gaEvent' }); dataLayer.push({ 'pageView': '/vp/funnel/arama', 'event': 'virtualPageView' });"&gt;...&lt;/a&gt; is not clickable at point (1090, 253). Other element would receive the click: &lt;div class="ui-widget-overlay ui-front" style="z-index: 19999;"&gt;&lt;/div&gt;
+  (Session info: chrome=100.0.4896.88)
+</status>
+</test>
+<status status="FAIL" starttime="20220413 14:23:32.237" endtime="20220413 14:23:37.599"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="projeTest">projeTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
